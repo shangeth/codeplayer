@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head><title> CodePlayer  </title>
+    <link href="codePlayer1.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body> 
+ <!--------------------------------------------------------------------------------------------> 
+        
+       <div id="header">
+        
+         <div id="logo"> CodePlayer</div>
+        
+             <div id="buttonContainer">
+        
+                <div class="toggleButton active" id="html">HTML</div>
+                <div class="toggleButton" id="css">CSS</div>
+                <div class="toggleButton" id="js">JavaScript</div>
+                <div class="toggleButton active" id="output">Output</div>
+             </div>
+        
+      </div>
+        
+  <!-------------------------------------------------------------------------------------------->      
+        
+        <div id="bodyContainer">
+            
+  <!-------------------------------------------------------------------------------------------->          
+        <div id="htmlBox" class="Box">
+          <div id="htmlPanelTitle" class="panelTitle">HTML</div>
+          <textarea id="htmlPanel" class="panel"></textarea>
+            
+            <div class="save">
+                
+            <div class="save1">
+		      
+                <input id="inputFileNameToSaveAshtml" placeholder="text.html" class="savebtn">
+		       <button class="toggleButton" onclick="saveTextAsFilehtml()">Save File</button>
+               </input>
+            </div>
+	           </br>
+                
+            <div class="save2">
+		     
+		       <input type="file" id="fileToLoadhtml" >
+		       <button class="toggleButton" onclick="loadFileAsTexthtml()">Load File</button>
+            </div>
+            
+        </div>
+        
+        </div> 
+         
+ <!-------------------------------------------------------------------------------------------->           
+         <div id="cssBox" class="Box hidden">
+          <div id="cssPanelTitle" class="panelTitle">CSS</div>
+          <textarea id="cssPanel" class="panel"></textarea> 
+             <div class="save">
+                
+            <div class="save1">
+		      
+               <input id="inputFileNameToSaveAscss" placeholder="text.css"  class="savebtn"></input>
+		       <button class="toggleButton" onclick="saveTextAsFilecss()">Save File</button>
+            </div>
+	           </br>
+                
+            <div class="save2">
+		     
+		       <input type="file" id="fileToLoadcss" >
+		       <button class="toggleButton" onclick="loadFileAsTextcss()">Load File</button>
+            </div>
+            
+        </div>
+        </div>
+<!-------------------------------------------------------------------------------------------->         
+            
+        <div id="jsBox" class="Box hidden">
+          <div id="jsPanelTitle" class="panelTitle">JS</div>
+          <textarea id="jsPanel" class="panel"></textarea>   
+            <div class="save">
+                
+            <div class="save1">
+		      
+               <input id="inputFileNameToSaveAsjs" placeholder="text.js"  class="savebtn"></input>
+		       <button class="toggleButton" onclick="saveTextAsFilejs()">Save File</button>
+            </div>
+	           </br>
+                
+            <div class="save2">
+		     
+		       <input type="file" id="fileToLoadjs" >
+		       <button class="toggleButton" onclick="loadFileAsTextjs()">Load File</button>
+            </div>
+            
+        </div>
+        </div>
+            
+<!-------------------------------------------------------------------------------------------->        
+        <div id="outputBox" class="Box">
+          <div id="outputPanelTitle" class="panelTitle">OUTPUT</div>
+            <iframe width="100%" id="outputPanel" class="panel"></iframe>      
+        </div>
+        
+<!-------------------------------------------------------------------------------------------->     
+        
+        </div>
+        
+  <!-------------------------------------------------------------------------------------------->      
+        
+        
+        
+        <!-- javascript-->
+        
+        
+        
+          <!-- install jquerry from server directly-->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script> 
+        
+          
+        <script src="codePlayer1.js"></script>
+        
+        
+        
+         
+   
+    
+        
+        
+    </body>
+    </html> 
